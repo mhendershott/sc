@@ -1,5 +1,9 @@
 # Stream Commander #
 
+> WARNING: this is very raw at the moment.  Really just in the personal proof of concept phase.
+> No warranty to functionality or security is offered or should be expected.
+
+
 This is a work in progress project for a custom system that allows 
 video and audio to be played on a stream via a browser source in the 
 OBS scene.
