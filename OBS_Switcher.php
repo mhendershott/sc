@@ -17,7 +17,7 @@
         function getScenes() {
             const ajaxRequest = new XMLHttpRequest();
             var sceneData;
-            var url = "https://ashenfieldx.live/sc/sceneSwitcher.php?streamID=AshenfieldX929239-34-DEV";
+            var url = "sceneSwitcher.php?streamID=AshenfieldX929239-34-DEV";  //TO DO: get streamID from url
             ajaxRequest.open("GET", url, true);
             try {
                 ajaxRequest.send();
@@ -64,7 +64,7 @@
 
             const ajaxRequest = new XMLHttpRequest();
             var sceneData;
-            var url = "https://ashenfieldx.live/sc/sceneSwitcher.php?streamID=AshenfieldX929239-34-DEV&scene=" + myScene;
+            var url = "sceneSwitcher.php?streamID=AshenfieldX929239-34-DEV&scene=" + myScene; //TO DO: get streamID from url
             ajaxRequest.open("GET", url, true);
             ajaxRequest.send();
             console.log(ajaxRequest);

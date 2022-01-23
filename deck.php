@@ -1,12 +1,9 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
-<<<<<<< HEAD
 <!-- Include local copy of noSleep code from https://github.com/richtr/NoSleep.js 
 to ensure browser window on deck device stays awake.
 I need to reference the license I think, I'm new at this -->
-=======
->>>>>>> 28dc9f7863f78fe1137bc42e7cb3bf4d2f91b157
 <script src="noSleep.min.js"></script>
 </head>
 <body>
@@ -125,7 +122,7 @@ document.addEventListener('touchstart', enableNoSleep, false);
         //ajax call to url
         
         const ajaxRequest = new XMLHttpRequest();
-        var url = "https://ashenfieldx.live/sc/sceneSwitcher.php?scene=" + scene + "&streamID=" + streamID;
+        var url = "sceneSwitcher.php?scene=" + scene + "&streamID=" + streamID;
         ajaxRequest.open("GET", url, true);
         ajaxRequest.send();
 
@@ -135,7 +132,7 @@ document.addEventListener('touchstart', enableNoSleep, false);
     function playMedia(command, param, streamID) {
         //ajax call to url
         const ajaxRequest = new XMLHttpRequest();
-        var url = "https://ashenfieldx.live/sc/sc.php?command=" + command + "&param=" + param + "&streamID=" + streamID;
+        var url = "sc.php?command=" + command + "&param=" + param + "&streamID=" + streamID;
         ajaxRequest.open("GET", url, true);
         ajaxRequest.send();
     }

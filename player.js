@@ -68,8 +68,7 @@ if (q[0]) {
 
     function getQ() {
         //read a url and save it to a variable , random for cache avoidance
-        // var url = "https://ashenfieldx.live/sc/command.txt?viewerID="+vid+"t=" + Math.random();
-        var url = "https://ashenfieldx.live/sc/getqueue.php?viewerID="+vid+"&t=" + Math.random();
+        var url = "getqueue.php?viewerID="+vid+"&t=" + Math.random();
         //create an ajax request
         const ajaxRequest = new XMLHttpRequest();
 
@@ -99,7 +98,7 @@ if (q[0]) {
     function deletePayload(seq) {
         const ajaxRequest = new XMLHttpRequest();
     
-        var url = "https://ashenfieldx.live/sc/removeCommand.php?commandID="+seq+"&t="+ Math.random();
+        var url = "removeCommand.php?commandID="+seq+"&t="+ Math.random();
         ajaxRequest.open("GET", url, true);
         try {
             ajaxRequest.send();
@@ -117,7 +116,7 @@ function viewerID() {
     var viewerID = uuidv4();
 
     const ajaxRequest = new XMLHttpRequest();
-        var url = "https://ashenfieldx.live/sc/viewerRegister.php?viewerID=" + viewerID +"&t="+ Math.random();
+        var url = "viewerRegister.php?viewerID=" + viewerID +"&t="+ Math.random();
         ajaxRequest.open("GET", url, true);
         try {
             ajaxRequest.send();
@@ -130,7 +129,7 @@ function viewerID() {
 
 async function viewerHeartbeat() {
     const ajaxRequest = new XMLHttpRequest();
-    var url = "https://ashenfieldx.live/sc/viewerRegister.php?viewerID=" + vid +"&t="+ Math.random();
+    var url = "viewerRegister.php?viewerID=" + vid +"&t="+ Math.random();
     ajaxRequest.open("GET", url, true);
     try {
         ajaxRequest.send();
