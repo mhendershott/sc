@@ -27,16 +27,18 @@ implementation to allow commands to be sent to OBS to change scenes.
     <tr><td>sceneSwitcher.php</td><td>Server Side for processing scene switch commands</td></tr>
     <tr><td>viewerRegister.php</td><td>Server Side for processing viewer registration</td></tr>
     <tr><td>CreateDB.sql</td><td>Schema creation commands for creating server DB structure</td></tr>
-    
+
   </table> 
 
-  ## REQUIREMENTS
+  ## GENERAL REQUIREMENTS
 
   This system is designed to run on a webserver.  
   This can be a local webserver, or one on the internet.   
   If you want to pass commands to this webserver from a cloudbot (i.e. Streamlabs Cloudbot)   
-  you will need your web server to be publicly reachable.   
-  Your server will require a mySQL/MariaDB server.   
+  you will need your web server to be publicly reachable.     
   This has been tested with OBS.   
   As of 2022-01-23 the commands to change scenes require [OBS Studio 27.2 Beta](https://obsproject.com/forum/threads/obs-studio-27-2-beta.151781/)   
-  Prior versions to not have the required getCurrentScene / changeScene functions enabled in the obs-browser package.   
+  Prior versions do not have the required getCurrentScene / changeScene functions enabled in the obs-browser package.   
+
+  ### Web Server Requirements
+  Requires mysql, apache2, php (7.2+) with php-curl, php-mysql modules.

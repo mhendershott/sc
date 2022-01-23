@@ -3,7 +3,9 @@
 -- credentials should be stored in the config.php file
 -- Changes to this schema are not recommended
 
+DROP DATABASE IF EXISTS `player`;
 CREATE DATABASE `player` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+USE `player`;
 CREATE TABLE `commandQueue` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `command` varchar(45) DEFAULT NULL,
