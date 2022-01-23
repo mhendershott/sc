@@ -1,0 +1,27 @@
+<?php
+
+
+const DEBUG = false;
+const SN_INTEGRATION = false;
+
+// ServiceNow Configuration
+// Most will never use this, this will probably be removed and rebuilt as a separate connector project
+//Enable/Disable Service Now Integration
+$SNIntegration = false;
+
+// Service Now API Account
+$SNusername = "ServiceNowUser";
+$SNpassword = "ServiceNowPassword";
+
+// Service Now API URL
+$SNurl = "https://xxxxxxx.service-now.com";
+$SNApiPath = "/api/x_72920_overlay_co";
+$SNcommandPath = "/overlaycommander";
+$SNViewerPath = "/overlaycommander/viewers";
+
+// Web Server Configuration
+$dbuser = "<databaseUSER>"; // provide your database username
+$dbpass = "<databasePassword>"; //provide you database password
+$dbname = "<player>";
+$dbhost = "localhost";
+
