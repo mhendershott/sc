@@ -6,6 +6,11 @@
 <body>
 
     <script>
+            // get streamID from URL
+            var urlParams = new URLSearchParams(window.location.search);
+            var streamID = urlParams.get('streamID');
+
+
         function main() {
             var scene = getScenes();
 
@@ -17,7 +22,7 @@
         function getScenes() {
             const ajaxRequest = new XMLHttpRequest();
             var sceneData;
-            var url = "sceneSwitcher.php?streamID=AshenfieldX929239-34-DEV";  //TO DO: get streamID from url
+            var url = "sceneSwitcher.php?streamID=" + streamID;  
             ajaxRequest.open("GET", url, true);
             try {
                 ajaxRequest.send();
@@ -64,7 +69,7 @@
 
             const ajaxRequest = new XMLHttpRequest();
             var sceneData;
-            var url = "sceneSwitcher.php?streamID=AshenfieldX929239-34-DEV&scene=" + myScene; //TO DO: get streamID from url
+            var url = "sceneSwitcher.php?streamID="+ streamID + "&scene=" + myScene; //TO DO: get streamID from url
             ajaxRequest.open("GET", url, true);
             ajaxRequest.send();
             console.log(ajaxRequest);
