@@ -27,6 +27,7 @@ implementation to allow commands to be sent to OBS to change scenes.
     <tr><td>sceneSwitcher.php</td><td>Server Side for processing scene switch commands</td></tr>
     <tr><td>viewerRegister.php</td><td>Server Side for processing viewer registration</td></tr>
     <tr><td>CreateDB.sql</td><td>Schema creation commands for creating server DB structure</td></tr>
+    
   </table> 
 
   ## REQUIREMENTS
