@@ -1,11 +1,13 @@
 <?php
+require_once './config.php';
+require_once './functions.php';
 //sanitize $_GET array
 $_GET = filter_input_array(INPUT_GET, FILTER_SANITIZE_STRING);
 
 $viewerID = $_GET['viewerID'];
 
 //get commands with viewerID from database
-$db = new mysqli('localhost', 'playerdb', 'bigbeefyman', 'player');
+$db = connectDB(); 
 $query = "SELECT * FROM player.commandQueue WHERE viewerID = '$viewerID' order by id asc";
 $result = $db->query($query);
 
