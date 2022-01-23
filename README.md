@@ -31,11 +31,11 @@ implementation to allow commands to be sent to OBS to change scenes.
 
   ## REQUIREMENTS
 
-  This system is designed to run on a webserver.
-  This can be a local webserver, or one on the internet.
-  If you want to pass commands to this webserver from a cloudbot (i.e. Streamlabs Cloudbot)
-  you will need your web server to be publicly reachable.
-  Your server will require a mySQL/MariaDB server.
-  This has been tested with OBS.
-  As of 2022-01-23 the commands to change scenes require [OBS Studio 27.2 Beta](https://obsproject.com/forum/threads/obs-studio-27-2-beta.151781/)
-  Prior versions to not have the required getCurrentScene / changeScene functions enabled in the obs-browser package.
+  This system is designed to run on a webserver.  
+  This can be a local webserver, or one on the internet.   
+  If you want to pass commands to this webserver from a cloudbot (i.e. Streamlabs Cloudbot)   
+  you will need your web server to be publicly reachable.   
+  Your server will require a mySQL/MariaDB server.   
+  This has been tested with OBS.   
+  As of 2022-01-23 the commands to change scenes require [OBS Studio 27.2 Beta](https://obsproject.com/forum/threads/obs-studio-27-2-beta.151781/)   
+  Prior versions to not have the required getCurrentScene / changeScene functions enabled in the obs-browser package.   
