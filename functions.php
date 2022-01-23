@@ -181,7 +181,7 @@ function sendServiceNowCommand($payload)
     //build url from config variables
     $url = $url . $apiPath . $commandPath;
 
-    //$url = 'https://dev66519.service-now.com/api/x_72920_overlay_co/overlaycommander';
+   
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
