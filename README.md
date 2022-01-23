@@ -1,5 +1,12 @@
 # Stream Commander #
 
+<<<<<<< HEAD
+=======
+> WARNING: this is very raw at the moment.  Really just in the personal proof of concept phase.
+> No warranty to functionality or security is offered or should be expected.
+
+
+>>>>>>> 28dc9f7863f78fe1137bc42e7cb3bf4d2f91b157
 This is a work in progress project for a custom system that allows 
 video and audio to be played on a stream via a browser source in the 
 OBS scene.

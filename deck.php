@@ -1,9 +1,12 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+<<<<<<< HEAD
 <!-- Include local copy of noSleep code from https://github.com/richtr/NoSleep.js 
 to ensure browser window on deck device stays awake.
 I need to reference the license I think, I'm new at this -->
+=======
+>>>>>>> 28dc9f7863f78fe1137bc42e7cb3bf4d2f91b157
 <script src="noSleep.min.js"></script>
 </head>
 <body>
