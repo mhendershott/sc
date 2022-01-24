@@ -22,7 +22,7 @@ implementation to allow commands to be sent to OBS to change scenes.
     <tr><td>getqueue.php</td><td>Server side file to get current queue for specific viewport and return JSON</td></tr>
     <tr><td>player.js</td><td>Main js file to control play and register viewers</td></tr>
     <tr><td>q.php</td><td>Runs as an OBS browser source to play content</td></tr>
-    <tr><td>removeCommand</td><td>Runs server side to remove command from a queue after it has been run</td></tr>
+    <tr><td>removeCommand.php</td><td>Runs server side to remove command from a queue after it has been run</td></tr>
     <tr><td>sc.php</td><td>Command ingestor.  Target for bot commands, or other calls to add commands to queue</td></tr>
     <tr><td>sceneSwitcher.php</td><td>Server Side for processing scene switch commands</td></tr>
     <tr><td>viewerRegister.php</td><td>Server Side for processing viewer registration</td></tr>
